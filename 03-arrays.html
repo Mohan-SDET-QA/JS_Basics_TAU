@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // in JS we can create or intialise an array variable using []
+        // element length will start from 1
+        // element mapping position (INDEX) will start from 0
+
+        const ar = [
+            "java", 
+            "js", 
+            "ReactNative",
+            45+15,
+            "ackon"
+        ];
+        console.log(ar);
+
+        const ew = [
+        "mohan", 
+        "deepshika", 
+        "sachin", 
+        "dhoni"
+    ];
+
+    ew.push("shewag");
+    let out = ew.pop();
+
+    console.log(ew);
+    console.log(out);
+
+    const newarr = [
+        "game",
+        "pacman",
+        "superman",
+        "spiderman"
+
+    ];
+    const new01 = [
+        "mohan", 
+        "suresh",
+        "ramesh",
+        "ganesh",
+        "rajesh"
+    ];
+
+    // new01.push(newarr);
+
+    // console.log(new01)
+    // console.log(newarr)
+
+        // we can perform various activities with arrays like add, remove, gettinglength, etc
+        // you can add using push remove using pop
+
+        // some of the methods from js for arrays are pop and push.
+
+
+    const all = [
+        new01,
+        newarr,
+        ew,
+        ar
+    ];
+
+    all.pop();
+
+    console.log(all);
+
+    // in arrays length starts at 1 and index starts at 0
+    // for finding length of an array you can use .length function and for index you can minus -1 from length
+
+    const all = [
+            mohan = 1,
+            suresh = 2,
+            ramesh = 3,
+            rajesh = 4,
+        ];
+
+        let st = "singh"
+        all.push(st);
+
+        console.log(all);
+
+        var arr = [];
+        arr[0] = "Jani";
+        arr[1] = "Hege";
+        arr[2] = "Stale";
+        arr[3] = "Kai Jim";
+        arr[4] = "Borge";
+
+        console.log(arr.join()); // Jani,Hege,Stale,Kai Jim,Borge
+        arr.splice(2, 0, "Lene");
+        console.log(arr.join()); // Jani,Hege,Lene,Stale,Kai Jim,Borge
+
+
+        const arnew = [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+        ];
+
+        // arnew.splice(4, 2);
+
+        const insert = (arr, index, newItem) => [
+            // part of the array before the specified index
+            ...arr.slice(0, index),
+            // inserted item
+            newItem,
+            // part of the array after the specified index
+            ...arr.slice(index)
+        ]
+
+        const res = insert(arnew, 2, "mohan")
+
+        console.log(res);
+        
+    </script>
+</body>
+</html>
